@@ -22,6 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>d5832eb44c3fea10463ada765dcedbb516b5f459</sonar.login>
 	</properties>
 	
 	<distributionManagement>
@@ -88,6 +90,11 @@
 			    <tagNameFormat>v@{project.version}</tagNameFormat>
 			    <autoVersionSubmodules>true</autoVersionSubmodules>
 			  </configuration>
+			</plugin>
+			<plugin>
+			   <groupId>org.codehaus.mojo</groupId>
+			   <artifactId>sonar-maven-plugin</artifactId>
+			   <version>3.5.0.1254</version>
 			</plugin>
 		</plugins>
 	</build>
