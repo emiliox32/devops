@@ -2,7 +2,7 @@ node {
    def mvnHome
    stage('Prepare') {
       git url: 'https://github.com/emiliox32/devops.git', branch: 'develop'
-      mvnHome = tool 'M3'
+      mvnHome = tool 'MAVEN'
    }
    stage('Build') {
       if (isUnix()) {
